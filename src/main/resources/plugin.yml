@@ -1,0 +1,12 @@
+name: TagBatch
+version: '${version}'
+main: snw.tagbatch.TagBatch
+api-version: '1.20'
+authors: [ SNWCreations ]
+description: Add player scoreboard tag by batch operation using an interactive GUI.
+
+commands:
+  tagbatch:
+    description: "Tag batch operation"
+    permission: tagbatch.use
+    usage: "/tagbatch <tag>"
