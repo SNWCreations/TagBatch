@@ -15,7 +15,7 @@ public final class TagBatchCommand implements CommandExecutor {
                 return false;
             }
             String tag = args[0];
-            new TagBatchGUI(tag).showTo(player);
+            new TagBatchGUI(tag, player.getUniqueId()).show();
             return true;
         } else {
             sender.sendMessage(ChatColor.RED + "不受支持的执行者");

@@ -17,10 +17,11 @@ public final class TagBatchGUI extends AbstractPlayersSelectorGUI {
     private final String tag;
     private final Set<UUID> original;
 
-    public TagBatchGUI(String tag) {
+    public TagBatchGUI(String tag, UUID who) {
         super(
                 JavaPlugin.getPlugin(TagBatch.class),
-                "选择将要拥有 " + tag + " 标签的玩家"
+                "选择将要拥有 " + tag + " 标签的玩家",
+                who
         );
         this.tag = tag;
         Set<UUID> matching = Bukkit.getOnlinePlayers()
